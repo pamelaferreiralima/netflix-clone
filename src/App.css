@@ -1,0 +1,80 @@
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body {
+    background-color: black;
+    color: white; 
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;   
+}
+h1{
+   color: yellow;  
+   font-weight: bold;
+   font-size: 2rem;
+}
+h2{
+    font-size: 1,5rem;
+    text-align: center;
+    justify-content: center;
+    
+    display: flex;
+    flex-wrap: initial;
+    color: black;
+    background-color: white;
+}
+.movies-images{
+    display: flex;
+    width: 250px;
+
+    margin-left: 2rem;
+    padding-left: 2rem; 
+  
+    transform:scale(0.9) ; 
+}
+.shows-images{
+    display: flex;
+    width: 250px;
+
+    margin-left: 2rem;
+    padding-left: 2rem; 
+   
+    transform:scale(0.9) ; 
+} 
+.box-movie{
+    
+    border: 1px solid yellow;
+    box-sizing: border-box;
+
+    text-align: center;
+}
+.box-show{
+    border: 1px solid yellow;
+    box-sizing: border-box;
+
+    text-align: center;
+} 
+.title-movie{
+    font-weight: bold;
+    font-size: 20px;
+}
+.title-show{
+    font-weight: bold;
+    font-size: 20px;
+}
+.box-movie{
+    box-sizing: border-box;
+    height: 400px;
+    width: 400px;
+}
+.box-show{
+    box-sizing: border-box;
+    height: 400px;
+    width: 400px;
+}
+
+
