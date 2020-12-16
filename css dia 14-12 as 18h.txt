@@ -1,0 +1,42 @@
+css dia 14-12 as 18h
+html{
+    background-color: #000000;
+    color: white;
+}
+
+h1{
+    color: yellow;
+    font-weight: bold;
+
+    font-size: 30px;
+    margin-left: 20px;
+
+    display: flex;
+    justify-content: initial;
+}
+.map-movies{
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+}
+.map-shows{
+    display: flex;
+    flex-direction: row;
+
+    text-align: center;
+}
+.movies-images{
+    display: flex;
+    flex-direction: row;
+
+    height: 300px;
+    width: 200px;
+}
+.box-movie{
+    text-align: justify;
+    width: 200px;
+}
+
+
+

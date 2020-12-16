@@ -1,0 +1,39 @@
+Css 13/12/2020
+às 17h 
+html{
+    background-color: #000000;
+    color: white;
+}
+
+h1{
+    color: yellow;
+    font-weight: bold;
+
+    font-size: 30px;
+    margin-left: 20px;
+
+    display: flex;
+    justify-content: initial;
+}
+.movies-map{
+    display: block;
+    flex-direction: row;
+}
+.map-shows{
+    display: flex;
+    flex-direction: row;
+    overflow-x: visible;
+
+    text-align: center;
+}
+.movies-images{
+    display: flex;
+    flex-direction: row;
+
+    height: 300px;
+    width: 200px;
+}
+.box-movie{
+    text-align: justify;
+    width: 200px;
+}

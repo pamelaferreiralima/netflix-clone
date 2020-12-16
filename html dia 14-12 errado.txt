@@ -1,0 +1,40 @@
+html 14-12 'errado'
+<body>
+      <header>
+        <h1>Pamflix</h1>        
+      </header>
+      <div className='container-movies'>
+        <h2>Filmes</h2>
+      </div>
+      <div className='map-movies-container'>
+        {this.state.movies.map((item, index) =>
+        <div className='map-movies' key ={index}>
+          <img className='movies-image' src={`https://image.tmdb.org/t/p/w200${item.poster_path}`}></img>
+        <div className='box-movie'>
+          <p>{item.title}</p>
+          <p>{item.overview}</p>
+          <p>{item.release_date}</p>
+        </div>
+        </div>
+        ))}
+        <div className='container-shows'>
+          <h2>Séries</h2>
+        </div>
+        <div className='map-shows-container'>
+          {this.state.shows.map((item, index)  =>
+         <div className='map-shows' key={index}>
+           <img className='shows-image' src={`https://image.tmdb.org/t/p/w200${item.poster_path}`}></img>
+         <div>
+            <p>{item.name}</p>
+            <p>{item.overview}</p>
+            <p>{item.first_air_date}</p>
+         </div>
+         </div>
+          ))}
+        </div>
+      </div>
+    </body>
+  </div>
+   );
+  }
+}
