@@ -8,8 +8,13 @@ class Netflix extends Component {
 
   state = {
     movies: [],
-    shows: []
+    shows: [],
+    search:''
   }
+ 
+  handleChange = (event) => {
+    this.setState({ search: event.target.value });
+  };
 
   componentDidMount() {
     this.getMovies()
@@ -55,7 +60,13 @@ class Netflix extends Component {
             <a className='home' href=''>Séries</a>
             <a className='home' href=''>Filmes</a>
             <a className='home' href=''>Minha Lista</a>
-            <a className='icon-search' href=''>  <img src='https://img.icons8.com/fluent/48/000000/search-bar.png' /></a>
+            <a className='icon-search' href=''>  <img src='https://img.icons8.com/plasticine/100/000000/google-web-search.png'/></a>
+            <div>
+              <label>
+                <input onChange={this.handleChange} />
+                <p>{this.state.state1} </p>
+              </label>
+            </div>
           </div>
         </header>
         <h2 className='movies'>Filmes</h2>
@@ -85,6 +96,13 @@ class Netflix extends Component {
             </div>
           ))}
         </div>
+        <footer>
+          <div className='footer-contact'>
+            <p>Para maiores informações</p>
+            <p>Email: <a href=''>pamela.potenciatech@gmail.com</a></p>
+            <p>© Pamflix 2020</p>
+          </div>
+        </footer>
       </div>
     );
   }
